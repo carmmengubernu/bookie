@@ -1,0 +1,39 @@
+h1 {
+  @apply font-heading text-[32px] md:text-[40px] leading-[40px] md:leading-[50px] font-semibold;
+}
+
+h2 {
+  @apply font-heading text-[28px] leading-[35px] font-semibold;
+}
+
+h3 {
+  @apply font-heading text-[22px] leading-[28px] font-semibold;
+}
+
+h4 {
+  @apply font-heading text-[18px] leading-[24px] font-semibold;
+}
+
+body {
+  @apply font-body text-[16px] leading-[24px] text-ink font-normal;
+}
+
+.body-large {
+  @apply font-body text-[18px] leading-[28px] font-normal;
+}
+
+.caption {
+  @apply font-body text-[12px] leading-[18px] font-normal;
+}
+
+.lable {
+  @apply font-body text-[14px] leading-[20px] font-medium;
+}
+
+p a {
+  @apply font-[inherit] text-[length:inherit] underline hover:opacity-80 cursor-pointer font-normal;
+}
+
+.pre-title {
+  @apply font-body text-[12px] leading-[15px] font-semibold uppercase;
+}

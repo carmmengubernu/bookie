@@ -1,1 +1,3 @@
 @import './styles/tailwind.css';
+@import './styles/typography/typography.css';
+@import './components/index.css';
