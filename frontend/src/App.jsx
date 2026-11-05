@@ -76,7 +76,7 @@ function App() {
         />
         <IntroText
           pretitle={'bla bla bla'}
-          title={'titlu'}
+          title={'titlu titlu'}
           subtitle={'subtitlu'}
         />
       </div>
