@@ -1,1 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@600&display=swap');
 @import 'tailwindcss';
+
+@theme {
+  --color-ink: #26332c;
+  --color-muted-text: #606b64;
+  --color-canvas: #f7f8f6;
+  --color-surface: #ffffff;
+  --color-border: #d8dfd9;
+  --color-coral-hero: #ea7770;
+  --color-coral-subtle: #fce9e5;
+  --color-green-subtle: #e9f2e5;
+  --color-sunshine: #f4ce68;
+  --color-butter: #fff5d8;
+  --color-warning: #805c0a;
+  --color-focus: #265f9b;
+  --color-button-default: #b13e36;
+  --color-button-default-hover: #913029;
+  --color-button-default-disabled: #e5e8e4;
+  --color-button-default-disabled-text: #606b64;
+
+  --color-button-secondary: #d8dfd9;
+  --color-button-secondary-text: #26332c;
+
+  --color-button-success: #286447;
+  --color-button-delete: #ac3035;
+
+  --font-*: initial;
+  --font-heading: 'Lora', serif;
+  --font-body: 'Inter', sans-serif;
+
+  --container-section: 1128px;
+}
