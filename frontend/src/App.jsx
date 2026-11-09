@@ -6,24 +6,16 @@ import {
 } from 'react-router-dom';
 import CarmenDevPage from './dev-pages/CarmenDevPage';
 import DianaDevPage from './dev-pages/DianaDevPage';
-
-function Home() {
-  return <h1>Home</h1>;
-}
+import Home from './Pages/Home/Home';
+import Aside from './components/Aside/Aside';
 
 function Layout() {
   return (
     <>
-      <nav className='flex gap-4 p-4'>
-        <Link to='/'>Home</Link>
-        {import.meta.env.DEV && (
-          <Link to='/carmen-components'>Carmen Components</Link>
-        )}
-        {import.meta.env.DEV && (
-          <Link to='/diana-components'>Diana Components</Link>
-        )}
-      </nav>
-      <Outlet />
+      <Aside />
+      <main className='flex-1 p-10 bg-canvas md:min-h-dvh'>
+        <Outlet />
+      </main>
     </>
   );
 }
