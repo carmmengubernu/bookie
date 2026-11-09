@@ -1,0 +1,7 @@
+.main-navigation {
+  @apply flex flex-col gap-2;
+
+  a {
+    @apply py-3.5 px-4 font-body text-[14px] leading-[20px] font-normal flex gap-4 items-center hover:text-button-default hover:bg-coral-subtle hover:font-bold rounded-xl transition-colors duration-300;
+  }
+}
