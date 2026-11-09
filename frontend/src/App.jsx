@@ -5,6 +5,7 @@ import {
   Outlet,
 } from 'react-router-dom';
 import CarmenDevPage from './dev-pages/CarmenDevPage';
+import DianaDevPage from './dev-pages/DianaDevPage';
 
 function Home() {
   return <h1>Home</h1>;
@@ -18,6 +19,9 @@ function Layout() {
         {import.meta.env.DEV && (
           <Link to='/carmen-components'>Carmen Components</Link>
         )}
+        {import.meta.env.DEV && (
+          <Link to='/diana-components'>Diana Components</Link>
+        )}
       </nav>
       <Outlet />
     </>
@@ -28,6 +32,9 @@ const children = [{ index: true, element: <Home /> }];
 
 if (import.meta.env.DEV) {
   children.push({ path: 'carmen-components', element: <CarmenDevPage /> });
+}
+if (import.meta.env.DEV) {
+  children.push({ path: 'diana-components', element: <DianaDevPage /> });
 }
 
 const router = createBrowserRouter([
