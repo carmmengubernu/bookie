@@ -17,7 +17,7 @@ function CarmenDevPage() {
       <div>
         <NotFound />
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-5 gap-4'>
+      <div className='grid grid-cols-1 md:grid-cols-5 gap-2'>
         <Button
           style={'default'}
           icon={'home'}
