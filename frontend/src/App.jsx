@@ -16,7 +16,7 @@ function Layout() {
       <Aside />
       <div className='w-full bg-canvas'>
         <AppHeader />
-        <main className='flex-1   p-10  md:min-h-dvh max-w-section '>
+        <main className='flex-1 flex flex-col gap-8 p-10  md:min-h-dvh max-w-section '>
           <Outlet />
         </main>
       </div>

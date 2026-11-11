@@ -12,30 +12,31 @@ function DianaDevPage() {
     <div className='w-full flex flex-col gap-8 p-8 bg-canvas max-w-section mx-auto '>
       <h1 className='text-coral-hero'>Diana Dev Page</h1>
       <Logo />
-
-      <div>
-        <CardSignUp
-          cardBackground={'bg-border'}
-          title={'A place for your favorite flavors.'}
-          description={'Collect recipes you’ll make again. Share the ones everyone asks you for. Welcome to Bookie.'}
-          imgSrc={'/public/BolSalata.jpg'}
-          altText='Bol Salata'
-          note={'One free account. Endless delicious possibilities.'}
-        />
+      <div className='flex gap-10'>
+        <div>
+          <CardSignUp
+            cardBackground={'bg-border'}
+            title={'A place for your favorite flavors.'}
+            description={
+              'Collect recipes you’ll make again. Share the ones everyone asks you for. Welcome to Bookie.'
+            }
+            imgSrc={'/public/BolSalata.jpg'}
+            altText='Bol Salata'
+            note={'One free account. Endless delicious possibilities.'}
+          />
+        </div>
+        <div>
+          <CardSignUp
+            cardBackground={'bg-coral-subtle'}
+            title={'Your kitchen. Your kind of cooking.'}
+            description={
+              'Save the keepers, share your creations and make every day a little more delicious.'
+            }
+            imgSrc={'/public/clatite.jpg'}
+            altText='Clatite'
+          />
+        </div>
       </div>
-      <div>
-        <CardSignUp
-          cardBackground={'bg-coral-subtle'}
-          title={'Your kitchen. Your kind of cooking.'}
-          description={'Save the keepers, share your creations and make every day a little more delicious.'}
-          imgSrc={'/public/clatite.jpg'}
-          altText='Clatite'
-    
-        />
-      </div>
-
-   
-
     </div>
   );
 }
