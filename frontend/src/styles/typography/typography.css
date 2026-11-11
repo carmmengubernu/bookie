@@ -19,7 +19,7 @@ body {
 }
 
 .body-large {
-  @apply font-body text-[18px] leading-[28px] font-normal;
+  @apply font-body text-[18px] leading-[28px];
 }
 
 .caption {

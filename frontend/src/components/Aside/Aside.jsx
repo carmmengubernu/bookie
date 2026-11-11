@@ -12,7 +12,7 @@ function Aside() {
   };
 
   return (
-    <aside className='flex flex-col gap-8 p-6 md:max-w-[232px] bg-surface'>
+    <aside className='z-10 sticky top-0 md:h-screen flex flex-col gap-8 p-6 md:max-w-[232px] bg-surface'>
       <div className='flex justify-between'>
         <Logo />
         <div className='flex gap-4 items-center'>
