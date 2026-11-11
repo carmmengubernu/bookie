@@ -7,10 +7,9 @@ function AppHeader() {
     <div className=' hidden md:flex items-center justify-between border-b border-border p-6 text-button-default-disabled-text  bg-surface'>
       <p className='label'>Your everyday cooking companion</p>
       <div className='flex flex-row gap-4 items-center'>
-        <Button
-          style={'secondary'}
-          text={'Hello,Maya'}
-        />
+        <p className='px-6 py-3 font-body text-label rounded-lg border-2 bg-surface border-button-secondary text-button-secondary-text'>
+          Hello,Maya
+        </p>
         <Link
           to='/my-profile'
           className='active cursor-pointer'>
