@@ -6,6 +6,8 @@ import Hero from '../components/Hero/Hero';
 import IntroText from '../components/IntroText/IntroText';
 import NotFound from '../components/NotFound/NotFound';
 import CardSignUp from '../components/CardSignUp/CardSignUp';
+import RegistrationForm from '../components/RegistrationForm/RegistrationForm';
+import SignInForm from '../components/SignInForm/SignInForm';
 
 function DianaDevPage() {
   return (
@@ -37,6 +39,14 @@ function DianaDevPage() {
           />
         </div>
       </div>
+
+      <div>
+        <RegistrationForm/>
+      </div>
+
+      <div>
+        <SignInForm />
+    </div>
     </div>
   );
 }
