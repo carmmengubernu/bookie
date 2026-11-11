@@ -1,26 +1,29 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Link,
-  Outlet,
-} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import CarmenDevPage from './dev-pages/CarmenDevPage';
 import DianaDevPage from './dev-pages/DianaDevPage';
 import Home from './Pages/Home/Home';
+import AppHeader from './components/AppHeader/AppHeader';
 import Aside from './components/Aside/Aside';
+import MyProfile from './Pages/MyProfile/MyProfile';
 
 function Layout() {
   return (
     <>
       <Aside />
-      <main className='flex-1 p-10 bg-canvas md:min-h-dvh'>
-        <Outlet />
-      </main>
+      <div className='w-full bg-canvas'>
+        <AppHeader />
+        <main className='flex-1   p-10  md:min-h-dvh max-w-section '>
+          <Outlet />
+        </main>
+      </div>
     </>
   );
 }
 
-const children = [{ index: true, element: <Home /> }];
+const children = [
+  { index: true, element: <Home /> },
+  { path: '/my-profile', element: <MyProfile /> },
+];
 
 if (import.meta.env.DEV) {
   children.push({ path: 'carmen-components', element: <CarmenDevPage /> });
