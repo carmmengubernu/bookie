@@ -54,7 +54,7 @@ function CarmenDevPage() {
           this is body large <a href='http://'>this is a link</a>
         </p>
         <p className='caption'>this is caption</p>
-        <p className='lable'>this is lable</p>
+        <p className='label'>this is label</p>
         <p className='pre-title'>This is a pre-title</p>
       </div>
       <div className='max-w-[184px]'>
