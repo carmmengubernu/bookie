@@ -38,7 +38,7 @@ function Hero() {
         <a
           href='http://'
           className='flex justify-center button button--success w-full lg:w-fit'>
-          Cook ths recipe
+          Cook this recipe
         </a>
       </div>
     </div>
