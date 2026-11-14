@@ -18,3 +18,7 @@
 .button--delete {
   @apply bg-button-delete border-button-delete text-surface hover:bg-button-delete/90;
 }
+
+.button--chip {
+  @apply bg-surface border-button-secondary min-w-fit text-button-secondary-text hover:bg-button-success/90 hover:border-button-success/90  hover:text-surface;
+}
