@@ -4,10 +4,8 @@ import { Link } from 'react-router-dom';
 
 function QuickCategories() {
   return (
-    <div>
-      <IntroText>
-        <p>Follow your cravings</p>
-      </IntroText>
+    <div className='flex flex-col gap-8'>
+      <IntroText title={'Follow your cravings'} />
       <div className='flex gap-2'>
         <a
           href='http://'
