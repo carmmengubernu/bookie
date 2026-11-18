@@ -9,6 +9,7 @@ import MyRecipes from './Pages/MyRecipes/MyRecipes';
 import AddRecipe from './Pages/AddRecipe/AddRecipe';
 import MyProfile from './Pages/MyProfile/MyProfile';
 import SignIn from './Pages/SignIn/SignIn';
+import SignUp from './Pages/SignUp/SignUp';
 
 function Layout() {
   return (
@@ -31,6 +32,7 @@ const children = [
   { path: '/add-recipe', element: <AddRecipe /> },
   { path: '/my-profile', element: <MyProfile /> },
   { path: '/sign-in', element: <SignIn /> },
+  { path: '/sign-up', element: <SignUp /> },
 ];
 
 if (import.meta.env.DEV) {

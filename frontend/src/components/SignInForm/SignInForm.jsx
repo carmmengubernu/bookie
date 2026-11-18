@@ -1,8 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Button from '../Button/Button';
 
 function SignInForm() {
   const inputClasses = "label w-full px-4 py-3 rounded-xl border border-gray-200 text-ink placeholder:text-muted-text bg-white focus:outline-none focus:border-gray-400";
+  const navigate = useNavigate();
 
   return (
     <div className="w-full max-w-md flex flex-col justify-center gap-6">
@@ -14,7 +16,7 @@ function SignInForm() {
         </p>
       </div>
 
-      <form className="flex flex-col gap-5">
+      <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
         
         <div className="flex flex-col gap-1.5">
           <label className="text-ink">Email address</label>
@@ -39,7 +41,7 @@ function SignInForm() {
             <input
               type="checkbox"
               id="remember"
-              className="className=w-4 h-4 rounded border-border accent-button-default cursor-pointer"
+              className="w-4 h-4 rounded border-border accent-button-default cursor-pointer"
             />
             <label htmlFor="remember" className="caption text-muted-text cursor-pointer">
               Remember me
@@ -63,6 +65,7 @@ function SignInForm() {
             type="button"
             style="secondary" 
             text="Create an account" 
+            onClick={() => navigate('/sign-up')}
           />
         </div>
 
