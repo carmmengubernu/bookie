@@ -6,8 +6,10 @@ function Button(props) {
   //   icon:string;
   //   text: string;
   // }
-  const handleOnClick = () => {
-    if (props.style === 'default') {
+  const handleOnClick = (e) => {
+    if (props.onClick) {
+      props.onClick(e);
+    } else if (props.style === 'default') {
       alert('ai apasat buttonu default');
     } else {
       alert('ai apasat secondary');
