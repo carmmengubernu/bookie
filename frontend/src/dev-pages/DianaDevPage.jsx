@@ -8,12 +8,28 @@ import NotFound from '../components/NotFound/NotFound';
 import CardSignUp from '../components/CardSignUp/CardSignUp';
 import RegistrationForm from '../components/RegistrationForm/RegistrationForm';
 import SignInForm from '../components/SignInForm/SignInForm';
+import PersonalDetailsCard from '../components/PersonalDetails/PersonalDetails';
+import ProfileCard from '../components/ProfileCard/ProfileCard';
+import CookPrefCard from '../components/CookPrefCard/CookPrefCard';
 
 function DianaDevPage() {
   return (
     <div className='w-full flex flex-col gap-8 p-8 bg-canvas max-w-section mx-auto '>
       <h1 className='text-coral-hero'>Diana Dev Page</h1>
       <Logo />
+
+      <div>
+        <PersonalDetailsCard />
+      </div>
+
+      <div>
+        <ProfileCard />
+      </div>
+
+      <div>
+        <CookPrefCard />
+      </div>
+
       <div className='flex gap-10'>
         <div>
           <CardSignUp
@@ -22,7 +38,7 @@ function DianaDevPage() {
             description={
               'Collect recipes you’ll make again. Share the ones everyone asks you for. Welcome to Bookie.'
             }
-            imgSrc={'/public/BolSalata.jpg'}
+            imgSrc={'/BolSalata.jpg'}
             altText='Bol Salata'
             note={'One free account. Endless delicious possibilities.'}
           />
@@ -34,19 +50,19 @@ function DianaDevPage() {
             description={
               'Save the keepers, share your creations and make every day a little more delicious.'
             }
-            imgSrc={'/public/clatite.jpg'}
+            imgSrc={'/clatite.jpg'}
             altText='Clatite'
           />
         </div>
       </div>
 
       <div>
-        <RegistrationForm/>
+        <RegistrationForm />
       </div>
 
       <div>
         <SignInForm />
-    </div>
+      </div>
     </div>
   );
 }

@@ -1,16 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../Button/Button";
 
 function RegistrationForm() {
+  const navigate = useNavigate();
   const inputClasses =
     "label w-full px-4 py-3 rounded-xl border border-gray-200 text-ink placeholder:text-muted-text bg-white focus:outline-none focus:border-gray-400";
   return (
     <div className="w-full max-w-md flex flex-col justify-center gap-6">
-      <div>
+      <div className="flex flex-col gap-1.5">
         <h2>Come on in.</h2>
         <p className="text-muted-text">Your personal cookbook starts here.</p>
       </div>
-      <form className="flex flex-col gap-5">
+      <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
         <div className="flex flex-col gap-1.5">
           <label className="text-ink">Full name *</label>
           <input type="text" placeholder="Your name" className={inputClasses} />
@@ -59,6 +61,7 @@ function RegistrationForm() {
           type="button"
           style="secondary"
           text="Already a member? Log in"
+          onClick={() => navigate("/sign-in")}
         />
       </form>
     </div>
