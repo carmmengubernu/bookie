@@ -9,7 +9,7 @@ function SignInForm() {
   return (
     <div className="w-full max-w-md flex flex-col justify-center gap-6">
       
-      <div>
+      <div className="flex flex-col gap-1.5">
         <h2>Welcome back, cook.</h2>
         <p className="text-muted-text">
           Log in to open your personal cookbook.
