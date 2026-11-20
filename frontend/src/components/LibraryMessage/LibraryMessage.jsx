@@ -3,7 +3,7 @@ import Button from '../Button/Button';
 
 function LibraryMessage() {
   return (
-    <div className='flex justify-between bg-green-subtle p-6 rounded-xl'>
+    <div className='flex flex-col md:flex-row gap-6 md:justify-between bg-green-subtle p-6 rounded-xl'>
       <div className='flex flex-col gap-2'>
         <p className='text-button-success font-bold'>
           Good taste, beautifully collected.
