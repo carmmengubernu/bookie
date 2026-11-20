@@ -27,17 +27,9 @@ function MyProfile() {
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 items-start'>
           <div className='lg:col-span-1 flex flex-col gap-6'>
             <ProfileCard />
-
-            <div className='grid grid-cols-2 gap-4'>
-              <div className='bg-green-subtle rounded-2xl p-6 flex flex-col gap-2'>
-                <h2>1</h2>
-                <span className='caption text-muted-text'>recipe shared</span>
-              </div>
-
-              <div className='bg-butter rounded-2xl p-6 flex flex-col gap-2'>
-                <h2>3</h2>
-                <span className='caption text-muted-text'>favorites</span>
-              </div>
+            <div className='bg-green-subtle rounded-2xl p-6 flex justify-between items-center gap-2'>
+              <h2>1</h2>
+              <span className='caption text-muted-text'>recipe shared</span>
             </div>
           </div>
 

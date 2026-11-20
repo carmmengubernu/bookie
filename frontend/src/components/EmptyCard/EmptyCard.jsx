@@ -3,7 +3,7 @@ import IntroText from '../IntroText/IntroText';
 
 function EmptyCard() {
   return (
-    <div className='flex flex-col items-center gap-6 bg-surface rounded-xl p-16 text-center'>
+    <div className='flex flex-col items-center gap-6 bg-surface rounded-xl p-6 md:p-16 text-center'>
       <span className='bg-butter p-12 rounded-xl max-w-36'>
         <svg
           xmlns='http://www.w3.org/2000/svg'

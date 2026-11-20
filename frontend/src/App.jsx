@@ -12,6 +12,7 @@ import SignIn from './Pages/SignIn/SignIn';
 import Footer from './components/Footer/Footer';
 import NotFound from './components/NotFound/NotFound';
 import SignUp from './Pages/SignUp/SignUp';
+import RecipePage from './components/RecipePage/RecipePage';
 
 function Layout() {
   return (
@@ -19,7 +20,7 @@ function Layout() {
       <Aside />
       <div className='w-full bg-canvas'>
         <AppHeader />
-        <main className='flex-1 flex flex-col gap-8 p-10  md:min-h-dvh max-w-section '>
+        <main className='flex-1 flex flex-col gap-8 m-6 md:m-10 md:min-h-dvh max-w-section '>
           <Outlet />
         </main>
         <Footer />
@@ -31,6 +32,7 @@ function Layout() {
 const children = [
   { index: true, element: <Home /> },
   { path: '/explore', element: <Explore /> },
+  { path: '/recipe/:id', element: <RecipePage /> },
   { path: '/my-recipes', element: <MyRecipes /> },
   { path: '/add-recipe', element: <AddRecipe /> },
   { path: '/my-profile', element: <MyProfile /> },

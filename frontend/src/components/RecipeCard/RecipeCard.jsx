@@ -1,16 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function RecipeCard() {
+function RecipeCard(props) {
   return (
-    <article className='flex flex-col border border-border bg-surface rounded-xl overflow-hidden shadow-[0_4px_16px_0_rgba(0,0,0,0.1)]'>
-      <img
-        src='clatite.jpg'
-        alt='poza-reteta'
+    <article className='flex flex-col border border-border bg-surface rounded-xl overflow-hidden shadow-[0_4px_16px_0_rgba(0,0,0,0.1)] relative'>
+      <Link
+        to={props.recipeUrl}
+        className='absolute w-full h-full cursor-pointer inset-0'
       />
+      {props.imgSrc && (
+        <img
+          src={props.imgSrc}
+          alt={props.altText}
+        />
+      )}
       <div className='flex flex-col p-4'>
-        <h3 className='body-large mb-8 font-bold'>
-          Roasted tomato & basil pasta
-        </h3>
+        <h3 className='body-large mb-8 font-bold'>{props.recipeTitle}</h3>
         <div className='flex gap-2 '>
           <span className='block'>
             <svg
@@ -32,7 +37,7 @@ function RecipeCard() {
             </svg>
           </span>
           <span className='label text-button-default-disabled-text block'>
-            30 mins
+            {props.recipeCookingTime}
           </span>
           <span className='block'>
             <svg
@@ -56,12 +61,20 @@ function RecipeCard() {
             </svg>
           </span>
           <span className='label text-button-default-disabled-text block'>
-            2servings
+            {props.recipeServings}
           </span>
         </div>
-        <span className='label bg-green-subtle text-button-success rounded-xl px-2 w-fit block mt-2'>
-          Vegetarian
-        </span>
+        {props.recipeCategories && (
+          <div className='flex items-center gap-1'>
+            {props.recipeCategories.map((category) => (
+              <span
+                key={category}
+                className='label bg-green-subtle text-button-success rounded-xl px-2 w-fit block mt-2'>
+                {category}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </article>
   );
