@@ -15,7 +15,7 @@ function Hero() {
             cy='24'
             r='120'
             fill='white'
-            fill-opacity='0.12549'
+            fillOpacity='0.12549'
           />
         </svg>
       </span>

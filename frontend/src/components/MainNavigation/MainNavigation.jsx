@@ -1,12 +1,13 @@
 import React from 'react';
-import Logo from '../Logo/Logo';
-import PromoCard from '../PromoCard/PromoCard';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function MainNavigation(props) {
   return (
     <nav className={`main-navigation ${props.isMenuOpen ? 'open' : ''}`}>
-      <Link to='/'>
+      <NavLink
+        to='/'
+        className={props.isActive && 'active'}
+        onClick={props.onCloseMenu}>
         <span>
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -23,9 +24,12 @@ function MainNavigation(props) {
           </svg>
         </span>
         Home
-      </Link>
+      </NavLink>
 
-      <Link to='/explore'>
+      <NavLink
+        to='/explore'
+        className={props.isActive && 'active'}
+        onClick={props.onCloseMenu}>
         <span>
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -33,11 +37,11 @@ function MainNavigation(props) {
             height='20'
             viewBox='0 0 20 20'
             fill='none'>
-            <g clip-path='url(#clip0_27_2672)'>
+            <g clipPath='url(#clip0_27_2672)'>
               <path
                 d='M18.334 10C18.334 14.6028 14.6028 18.334 10 18.334C5.39727 18.334 1.66602 14.6028 1.66602 10C1.66602 5.39727 5.39727 1.66602 10 1.66602C14.6028 1.66602 18.334 5.39727 18.334 10ZM13.5334 6.4662L12.03 10.9757C11.9482 11.2212 11.8103 11.4443 11.6273 11.6273C11.4443 11.8103 11.2212 11.9482 10.9757 12.03L6.4662 13.5334L7.96966 9.02391C8.05148 8.7784 8.18935 8.55532 8.37234 8.37234C8.55532 8.18935 8.7784 8.05148 9.02391 7.96966L13.5334 6.4662Z'
-                stroke-width='1.7'
-                stroke-linecap='round'
+                strokeWidth='1.7'
+                strokeLinecap='round'
                 stroke='#606B64'
               />
             </g>
@@ -53,8 +57,11 @@ function MainNavigation(props) {
           </svg>
         </span>
         Explore
-      </Link>
-      <Link to='/my-recipes'>
+      </NavLink>
+      <NavLink
+        to='/my-recipes'
+        className={props.isActive && 'active'}
+        onClick={props.onCloseMenu}>
         <span>
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -64,15 +71,18 @@ function MainNavigation(props) {
             fill='none'>
             <path
               d='M10 5.83333V17.5M10 5.83333C10 4.94928 9.6488 4.10143 9.02363 3.47631C8.39846 2.85119 7.55054 2.5 6.66642 2.5H2.49942C2.27838 2.5 2.06641 2.5878 1.91011 2.74408C1.75382 2.90036 1.66602 3.11232 1.66602 3.33333V14.1667C1.66602 14.3877 1.75382 14.5996 1.91011 14.7559C2.06641 14.9122 2.27838 15 2.49942 15H7.49982C8.16291 15 8.79885 15.2634 9.26772 15.7322C9.7366 16.2011 10 16.837 10 17.5M10 5.83333C10 4.94928 10.3512 4.10143 10.9764 3.47631C11.6016 2.85119 12.4495 2.5 13.3336 2.5H17.5006C17.7216 2.5 17.9336 2.5878 18.0899 2.74408C18.2462 2.90036 18.334 3.11232 18.334 3.33333V14.1667C18.334 14.3877 18.2462 14.5996 18.0899 14.7559C17.9336 14.9122 17.7216 15 17.5006 15H12.5002C11.8371 15 11.2012 15.2634 10.7323 15.7322C10.2634 16.2011 10 16.837 10 17.5'
-              stroke-width='1.7'
-              stroke-linecap='round'
+              strokeWidth='1.7'
+              strokeLinecap='round'
               stroke='#606B64'
             />
           </svg>
         </span>
         My Recipes
-      </Link>
-      <Link to='/add-recipe'>
+      </NavLink>
+      <NavLink
+        to='/add-recipe'
+        className={props.isActive && 'active'}
+        onClick={props.onCloseMenu}>
         <span>
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -80,11 +90,11 @@ function MainNavigation(props) {
             height='20'
             viewBox='0 0 20 20'
             fill='none'>
-            <g clip-path='url(#clip0_27_2684)'>
+            <g clipPath='url(#clip0_27_2684)'>
               <path
                 d='M6.66642 10H10M10 10H13.3336M10 10V6.66642M10 10V13.3336M18.334 10C18.334 14.6028 14.6028 18.334 10 18.334C5.39727 18.334 1.66602 14.6028 1.66602 10C1.66602 5.39727 5.39727 1.66602 10 1.66602C14.6028 1.66602 18.334 5.39727 18.334 10Z'
-                stroke-width='1.7'
-                stroke-linecap='round'
+                strokeWidth='1.7'
+                strokeLinecap='round'
                 stroke='#606B64'
               />
             </g>
@@ -100,8 +110,11 @@ function MainNavigation(props) {
           </svg>
         </span>
         Add Recipe
-      </Link>
-      <Link to='/my-profile'>
+      </NavLink>
+      <NavLink
+        to='/my-profile'
+        className={props.isActive && 'active'}
+        onClick={props.onCloseMenu}>
         <span>
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -111,21 +124,21 @@ function MainNavigation(props) {
             fill='none'>
             <path
               d='M9.99998 10.8333C12.3009 10.8333 14.1662 8.96785 14.1662 6.66667C14.1662 4.36548 12.3009 2.5 9.99998 2.5C7.69903 2.5 5.83373 4.36548 5.83373 6.66667C5.83373 8.96785 7.69903 10.8333 9.99998 10.8333ZM9.99998 10.8333C11.7679 10.8333 13.4634 11.5357 14.7136 12.786C15.9637 14.0362 16.666 15.7319 16.666 17.5M9.99998 10.8333C8.23205 10.8333 6.53653 11.5357 5.28641 12.786C4.03629 14.0362 3.33398 15.7319 3.33398 17.5'
-              stroke-width='1.7'
-              stroke-linecap='round'
+              strokeWidth='1.7'
+              strokeLinecap='round'
               stroke='#606B64'
             />
           </svg>
         </span>
         My Profile
-      </Link>
+      </NavLink>
 
       <>
         {import.meta.env.DEV && (
-          <Link to='/carmen-components'>Carmen Components</Link>
+          <NavLink to='/carmen-components'>Carmen Components</NavLink>
         )}
         {import.meta.env.DEV && (
-          <Link to='/diana-components'>Diana Components</Link>
+          <NavLink to='/diana-components'>Diana Components</NavLink>
         )}
       </>
     </nav>
