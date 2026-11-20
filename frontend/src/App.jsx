@@ -11,6 +11,7 @@ import MyProfile from './Pages/MyProfile/MyProfile';
 import SignIn from './Pages/SignIn/SignIn';
 import Footer from './components/Footer/Footer';
 import NotFound from './components/NotFound/NotFound';
+import SignUp from './Pages/SignUp/SignUp';
 
 function Layout() {
   return (
@@ -35,6 +36,7 @@ const children = [
   { path: '/my-profile', element: <MyProfile /> },
   { path: '/sign-in', element: <SignIn /> },
   { path: '*', element: <NotFound /> },
+  { path: '/sign-up', element: <SignUp /> },
 ];
 
 if (import.meta.env.DEV) {
