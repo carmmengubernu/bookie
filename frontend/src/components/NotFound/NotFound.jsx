@@ -32,7 +32,7 @@ function NotFound() {
           Back to Home
         </a>
         <a
-          href='/'
+          href='/explore'
           className='flex justify-center button button--secondary'>
           Explore recipes
         </a>

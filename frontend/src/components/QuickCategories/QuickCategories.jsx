@@ -1,39 +1,33 @@
 import React from 'react';
 import IntroText from '../IntroText/IntroText';
 import { Link } from 'react-router-dom';
+import FilterChip from '../Filter/FilterChip/FilterChip';
 
 function QuickCategories() {
   return (
-    <div>
-      <IntroText>
-        <p>Follow your cravings</p>
-      </IntroText>
-      <div className='flex gap-2'>
-        <a
-          href='http://'
-          className='flex justify-center button button--success w-fit'>
-          All recipes
-        </a>
-        <a
-          href='http://'
-          className='flex justify-center button button--secondary w-fit'>
-          Breakfast
-        </a>
-        <a
-          href='http://'
-          className='flex justify-center button button--secondary w-fit'>
-          Dinner
-        </a>
-        <a
-          href='http://'
-          className='flex justify-center button button--secondary w-fit'>
-          Baking
-        </a>
-        <a
-          href='http://'
-          className='flex justify-center button button--secondary w-fit'>
-          Vegetarian
-        </a>
+    <div className='flex flex-col gap-8'>
+      <IntroText title={'Follow your cravings'} />
+      <div className='flex flex-wrap gap-2'>
+        <FilterChip
+          link={'/'}
+          label={'All recipes'}
+        />
+        <FilterChip
+          link={'/'}
+          label={'Breakfast'}
+        />
+        <FilterChip
+          link={'/'}
+          label={'Dinner'}
+        />
+        <FilterChip
+          link={'/'}
+          label={'Baking'}
+        />
+        <FilterChip
+          link={'/'}
+          label={'Vegetarian'}
+        />
       </div>
     </div>
   );
