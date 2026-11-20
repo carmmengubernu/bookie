@@ -6,7 +6,7 @@ function SearchBar(props) {
     <div className='flex flex-col  gap-2'>
       {props.label && (
         <label
-          for='SearchBar'
+          htmlFor='SearchBar'
           className='label'>
           {props.label}
         </label>
