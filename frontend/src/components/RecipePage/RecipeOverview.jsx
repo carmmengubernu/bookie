@@ -13,7 +13,7 @@ function RecipeOverview(props) {
     <div className='flex flex-col md:flex-row gap-6'>
       {props.imgSrc && (
         <img
-          src={`/${props.imgSrc}`}
+          src={`${props.imgSrc}`}
           alt={props.altText}
           className='max-w-[536px] w-full rounded-xl'
         />

@@ -4,51 +4,7 @@ import SearchBar from '../../components/SearchBar/SearchBar';
 import FilterChip from '../../components/Filter/FilterChip/FilterChip';
 import RecipeCard from '../../components/RecipeCard/RecipeCard';
 import Pagination from '../../components/Pagination/Pagination';
-
-export const mockRecipes = [
-  {
-    id: 1,
-    recipeUrl: '/recipe/1',
-    imgSrc: 'clatite.jpg',
-    altText: 'poza reteta',
-    recipeTitle: 'Roasted tomato & basil pasta',
-    recipeText:
-      'Sweet, blistered tomatoes, a handful of basil and your favorite pasta. A simple bowl of comfort, ready in half an hour.',
-    recipeAuthor: 'Maya Chen',
-    recipePrepTime: '10 mins',
-    recipeCookingTime: '30 mins',
-    recipeServings: '2servings',
-    recipeCategories: ['Vegetarian', 'Easy'],
-  },
-  {
-    id: 2,
-    recipeUrl: '/recipe/2',
-    imgSrc: 'poza-hero.jpg',
-    altText: 'poza reteta',
-    recipeTitle: 'Shrimp Salad',
-    recipeText:
-      'Sweet, blistered tomatoes, a handful of basil and your favorite pasta. A simple bowl of comfort, ready in half an hour.',
-    recipeAuthor: 'Maya Chen',
-    recipePrepTime: '10 mins',
-    recipeCookingTime: '30 mins',
-    recipeServings: '2servings',
-    recipeCategories: ['Vegetarian', 'Easy'],
-  },
-  {
-    id: 3,
-    recipeUrl: '/recipe/3',
-    imgSrc: 'pastabowl.jpg',
-    altText: 'poza reteta',
-    recipeTitle: 'Shrimp Salad',
-    recipeText:
-      'Sweet, blistered tomatoes, a handful of basil and your favorite pasta. A simple bowl of comfort, ready in half an hour.',
-    recipeAuthor: 'Maya Chen',
-    recipePrepTime: '10 mins',
-    recipeCookingTime: '30 mins',
-    recipeServings: '2servings',
-    recipeCategories: ['Vegetarian', 'Easy'],
-  },
-];
+import { mockRecipes } from '../../mock-data/recipes';
 
 function Explore() {
   return (

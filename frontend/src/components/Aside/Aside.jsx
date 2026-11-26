@@ -22,7 +22,7 @@ function Aside() {
         <div className='flex gap-4 items-center'>
           <NavLink
             to='/my-profile'
-            className='activemd:hidden cursor-pointer'>
+            className='md:hidden cursor-pointer'>
             <span>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
