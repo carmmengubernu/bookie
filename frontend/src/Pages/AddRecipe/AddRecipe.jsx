@@ -5,9 +5,9 @@ function AddRecipe() {
   return (
     <>
       <IntroText
-        pretitle={'Welcome'}
-        title={'Add Recipe'}
-        subtitle={'this is where you manage your profile'}
+        pretitle={'add recipe'}
+        title={'Something worth sharing'}
+        subtitle={'Add a recipe to your personal cookbook. Make it yours.'}
       />
     </>
   );

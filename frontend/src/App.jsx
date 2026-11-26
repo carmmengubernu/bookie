@@ -13,6 +13,7 @@ import Footer from './components/Footer/Footer';
 import NotFound from './components/NotFound/NotFound';
 import SignUp from './Pages/SignUp/SignUp';
 import RecipePage from './components/RecipePage/RecipePage';
+import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy';
 
 function Layout() {
   return (
@@ -37,8 +38,9 @@ const children = [
   { path: '/add-recipe', element: <AddRecipe /> },
   { path: '/my-profile', element: <MyProfile /> },
   { path: '/sign-in', element: <SignIn /> },
-  { path: '*', element: <NotFound /> },
   { path: '/sign-up', element: <SignUp /> },
+  { path: '/privacy-policy', element: <PrivacyPolicy /> },
+  { path: '*', element: <NotFound /> },
 ];
 
 if (import.meta.env.DEV) {

@@ -7,14 +7,13 @@ function SignIn() {
     <div className='min-h-full bg-canvas flex flex-col justify-between px-6 py-10 md:px-12'>
       <div className='w-full max-w-[1128px] mx-auto my-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center'>
         <CardSignUp
-          cardBackground={'bg-green-subtle'}
-          title={'A place for your favorite flavors.'}
+          cardBackground={'bg-coral-subtle'}
+          title={'Your kitchen. Your kind of cooking.'}
           description={
-            'Collect recipes you’ll make again. Share the ones everyone asks you for. Welcome to Bookie.'
+            'Save the keepers, share your creations and make every day a little more delicious.'
           }
-          imgSrc={'/BolSalata.jpg'}
-          altText='Bol Salata'
-          note={'One free account. Endless delicious possibilities.'}
+          imgSrc={'/clatite.jpg'}
+          altText='Clatite'
         />
 
         <div className='w-full flex justify-center'>
