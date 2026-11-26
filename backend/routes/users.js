@@ -43,7 +43,7 @@ router.post('/signin', async (req, res) => {
   }
 });
 
-router.post('/', async (req, res) => {
+router.post('/signup', async (req, res) => {
   try {
     const { full_name, email, location, password } = req.body;
 

@@ -2,7 +2,7 @@ import React from 'react';
 import IntroText from '../IntroText/IntroText';
 import { Link } from 'react-router-dom';
 import RecipeCard from '../RecipeCard/RecipeCard';
-import { mockRecipes } from '../../Pages/Explore/Explore';
+import { mockRecipes } from '../../mock-data/recipes';
 
 function FeaturedGrid(props) {
   return (
