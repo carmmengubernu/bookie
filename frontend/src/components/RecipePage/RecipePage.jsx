@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import IngredientColumn from './IngredientColumn';
 import MethodColumn from './MethodColumn';
 import RecipeCard from '../RecipeCard/RecipeCard';
-import Pagination from '../Pagination/Pagination';
 
 function RecipePage() {
   const { id } = useParams();
