@@ -34,6 +34,20 @@ export const mockRecipes = [
     recipeServings: '2servings',
     recipeCategories: ['Vegetarian', 'Easy'],
   },
+  {
+    id: 3,
+    recipeUrl: '/recipe/3',
+    imgSrc: 'pastabowl.jpg',
+    altText: 'poza reteta',
+    recipeTitle: 'Shrimp Salad',
+    recipeText:
+      'Sweet, blistered tomatoes, a handful of basil and your favorite pasta. A simple bowl of comfort, ready in half an hour.',
+    recipeAuthor: 'Maya Chen',
+    recipePrepTime: '10 mins',
+    recipeCookingTime: '30 mins',
+    recipeServings: '2servings',
+    recipeCategories: ['Vegetarian', 'Easy'],
+  },
 ];
 
 function Explore() {
