@@ -1,10 +1,13 @@
 require('dotenv').config();
 
-const express = require('express'); //import express module
-const app = express(); //initialize express app
+const express = require('express');
+const cors = require('cors');
+const app = express();
+
+app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(express.json());
 
 app.get('/', (req, res) => {
-  console.log('Here');
   res.send('Home Page');
 });
 

@@ -13,7 +13,7 @@ function RecipeOverview(props) {
     <div className='flex flex-col md:flex-row gap-6'>
       {props.imgSrc && (
         <img
-          src={`/${props.imgSrc}`}
+          src={`${props.imgSrc}`}
           alt={props.altText}
           className='max-w-[536px] w-full rounded-xl'
         />
@@ -38,17 +38,17 @@ function RecipeOverview(props) {
           <p className='label text-muted-text'>By {props.recipeAuthor}</p>
         )}
 
-        <div>
-          <div className='flex gap-2  '>
+        <div className='flex gap-6'>
+          <div className='flex flex-col gap-2'>
             <p className='pre-title text-muted-text'>prep time</p>
-            <p className='pre-title text-muted-text'>cook time</p>
-          </div>
-          <div className='flex gap-6'>
             {props.recipePrepTime && (
-              <p className='label'>{props.recipePrepTime}</p>
+              <p className='font-bold'>{props.recipePrepTime}</p>
             )}
+          </div>
+          <div className='flex flex-col gap-2'>
+            <p className='pre-title text-muted-text'>cook time</p>
             {props.recipeCookingTime && (
-              <p className='label'>{props.recipeCookingTime}</p>
+              <p className='font-bold'>{props.recipeCookingTime}</p>
             )}
           </div>
         </div>

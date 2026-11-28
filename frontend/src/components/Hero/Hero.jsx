@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
@@ -35,11 +36,11 @@ function Hero() {
           Turn sweet roasted tomatoes into your new weeknight ritual. Simple
           ingredients, a bowlful of joy.
         </p>
-        <a
-          href='http://'
+        <Link
+          to={'/recipe/2'}
           className='flex justify-center button button--success w-full lg:w-fit'>
           Cook this recipe
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -1,20 +1,18 @@
 import React from 'react';
+import IntroText from '../../components/IntroText/IntroText';
 import RecipeBasicsCard from '../../components/RecipeBasicsCard/RecipeBasicsCard';
 import IngredientsCard from '../../components/IngredientsCard/IngredientsCard';
 import InstructionsCard from '../../components/InstructionsCard/InstructionsCard';
 import RecipePhotoCard from '../../components/RecipePhotoCard/RecipePhotoCard';
-import CardSignUp from '../../components/CardSignUp/CardSignUp';
 
 function AddRecipe() {
   return (
     <div className='w-full max-w-section mx-auto px-4 md:px-8 py-8 flex flex-col gap-8'>
-      <div className='flex flex-col gap-2'>
-        <span className='pre-title text-button-default'>ADD RECIPE</span>
-        <h1>Something worth sharing</h1>
-        <p className='text-muted-text'>
-          Add a recipe to your personal cookbook. Make it yours.
-        </p>
-      </div>
+      <IntroText
+        pretitle={'add recipe'}
+        title={'Something worth sharing'}
+        description={'Add a recipe to your personal cookbook. Make it yours.'}
+      />
 
       <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 items-start'>
         <div className='lg:col-span-2 flex flex-col gap-6'>
@@ -70,12 +68,14 @@ function AddRecipe() {
 
           <div className='bg-surface p-8 rounded-3xl border border-border flex flex-col gap-4'>
             <h3 className='text-ink'>A recipe worth sharing</h3>
-            <p className='text-muted-text'>
-            Use your own photo, list every ingredient and give your recipe a quick read before publishing.
+            <p className='label font-normal text-muted-text'>
+              Use your own photo, list every ingredient and give your recipe a
+              quick read before publishing.
             </p>
-            <p className='caption text-muted-text pt-1'>Fields marked * are required.</p>
+            <p className='caption text-muted-text pt-1'>
+              Fields marked * are required.
+            </p>
           </div>
-
         </div>
       </div>
 
